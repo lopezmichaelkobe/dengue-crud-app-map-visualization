@@ -3,8 +3,9 @@ import React from "react";
 import AddDengueData from "./AddDengueData";
 import DengueDataList from "./DengueDataList";
 import CsvUploader from "./CsvUploader";
-import DengueCharts from "./DengueCharts"; // Import the new charts component
-import "./AppStyles.css"; // Import the CSS file for styling
+import DengueCharts from "./DengueCharts";
+import Cartogram from "./Cartogram"; // Import the Cartogram map component
+import "./AppStyles.css";
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
           <DengueDataList />
         </div>
         <div className="card">
-          <DengueCharts /> {/* Include the charts component */}
+          <DengueCharts />
+        </div>
+        <div className="card">
+          <Cartogram /> {/* Add the Cartogram map */}
         </div>
       </main>
     </div>
